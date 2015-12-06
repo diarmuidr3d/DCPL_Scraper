@@ -23,7 +23,7 @@ def get_results(tree):
             score1 = str(score[:score.index("-")]).strip()
             score2 = str(score[score.index("-")+1:]).strip()
             team2 = row.xpath("td[4]//text()")[0]
-            ret.append({"team1": {"name": team1, "score": score1}, "team2": {"name": team2, "score": score2}})
+            ret.append({"date": date, "team1": {"name": team1, "score": score1}, "team2": {"name": team2, "score": score2}})
     return ret
 
 
